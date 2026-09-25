@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site pessoal de Ana Lucia Weber Cattani, estudante de Engenharia de Software na UTFPR.">
+  <meta name="author" content="Ana Lucia Weber Cattani">
+  <title>Ana Cattani | Site Pessoal</title>
+</head>
+<body>
+
+  <header id="inicio">
+    <h1>Ana Lucia Weber Cattani</h1>
+    <p>Estudante de Engenharia de Software na UTFPR.</p>
+
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#projetos">Projetos e interesses</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+      <figure>
+        <img src="assets/img/foto-perfil.svg" alt="Foto de Ana Lucia Weber Cattani" width="200" height="200">
+        <figcaption>Ana Cattani</figcaption>
+      </figure>
+      <!-- TODO: escreva sua apresentação -->
+      <p>
+        Olá! Meu nome é Ana e sou estudante de <strong>Engenharia de Software</strong>
+        na Universidade Tecnológica Federal do Paraná (UTFPR).
+      </p>
+      <p>
+        [Conte um pouco sobre você: o que te levou à área, o que você gosta de fazer
+        e quais são seus objetivos.]
+      </p>
+    </section>
+
+    <section id="formacao">
+      <h2>Formação acadêmica</h2>
+      <article>
+        <h3>Bacharelado em Engenharia de Software</h3>
+        <p>
+          <a href="https://www.utfpr.edu.br/" target="_blank" rel="noopener noreferrer">Universidade Tecnológica Federal do Paraná (UTFPR)</a>
+          <br>
+          [Câmpus] &mdash; [Ano de início] até o momento (em andamento)
+        </p>
+      </article>
+      <article>
+        <h3>[Ensino Médio / Curso técnico]</h3>
+        <p>[Nome da instituição] &mdash; [Ano de conclusão]</p>
+      </article>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos e interesses</h2>
+
+      <h3>Projetos</h3>
+      <article>
+        <h4>Site pessoal</h4>
+        <p>
+          Este site, desenvolvido de forma incremental ao longo da disciplina:
+          começa só com HTML, depois recebe CSS e, por fim, um layout responsivo.
+        </p>
+        <p>
+          <a href="https://github.com/anawebcatt/ana-portfolio" target="_blank" rel="noopener noreferrer">Ver código no GitHub</a>
+        </p>
+      </article>
+      <article>
+        <h4>[Nome de outro projeto]</h4>
+        <p>[Breve descrição do projeto e das tecnologias utilizadas.]</p>
+      </article>
+
+      <h3>Interesses</h3>
+      <ul>
+        <li>Desenvolvimento web</li>
+        <li>[Outro interesse]</li>
+        <li>[Outro interesse]</li>
+      </ul>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades e tecnologias</h2>
+      <table>
+        <caption>Tecnologias que utilizo</caption>
+        <thead>
+          <tr>
+            <th scope="col">Tecnologia</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Nível</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Front-end</td>
+            <td>Intermediário</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Front-end</td>
+            <td>Básico</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Front-end</td>
+            <td>Básico</td>
+          </tr>
+          <tr>
+            <td>Git e GitHub</td>
+            <td>Ferramentas</td>
+            <td>Básico</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="links">
+      <h2>Links</h2>
+      <ul>
+        <li><a href="https://github.com/anawebcatt" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <!-- TODO: troque SEU-USUARIO pelo seu usuário do LinkedIn -->
+        <li><a href="https://www.linkedin.com/in/SEU-USUARIO" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      </ul>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Quer conversar? Envie uma mensagem pelo formulário abaixo.</p>
+
+      <!-- Nesta etapa o formulário não envia dados para um servidor. -->
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Envie uma mensagem</legend>
+
+          <p>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+          </p>
+
+          <p>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+          </p>
+
+          <p>
+            <label for="assunto">Assunto:</label><br>
+            <select id="assunto" name="assunto">
+              <option value="projeto">Projeto</option>
+              <option value="estagio">Estágio / oportunidade</option>
+              <option value="outro">Outro</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="5" cols="40" placeholder="Escreva sua mensagem" required></textarea>
+          </p>
+
+          <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ana Lucia Weber Cattani</p>
+    <p><a href="#inicio">Voltar ao topo</a></p>
+  </footer>
+
+</body>
+</html>
